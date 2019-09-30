@@ -8,12 +8,7 @@
 	<name>Hello World Web Application Repository</name>
 	<description>Simplest possible Java Webapp</description>
 
-	<distributionManagement>
-   <snapshotRepository>
-      <id>nexus</id>
-     <url>http://13.233.200.92:8081/nexus/content/repositories/snapshots/</url>
-   </snapshotRepository>
-</distributionManagement>
+	
 
 	<build>
 		<plugins>
@@ -32,5 +27,12 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<distributionManagement>
+   <snapshotRepository>
+      <id>nexus</id>
+     <url>http://13.233.200.92:8081/nexus/content/repositories/snapshots/</url>
+   </snapshotRepository>
+</distributionManagement>
 
 </project>
