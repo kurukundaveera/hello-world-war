@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
          	   steps {
-               		git 'https://github.com/kurukundaveera/hello-world-war.git'
+               		git url: 'https://github.com/kurukundaveera/hello-world-war.git'
             }
         }
 		
@@ -15,7 +15,7 @@ pipeline {
 		
 		stage('Deploy') {
          	   steps {
-               		deploy adapters: [tomcat8(credentialsId: 'tomcat', path: '', url: 'http://13.233.200.92:8888/')], contextPath: 'HelloWorld', war: '**/*.war'
+               		deploy adapters: [tomcat9(credentialsId: 'cfd4addd-a3fb-415c-bdd4-e72675703d7e', path: '', url: 'http://13.233.200.92:8888/')], contextPath: null, war: '**/*.war'
 
             }
 		}
