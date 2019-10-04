@@ -29,10 +29,10 @@
 	</build>
 	
 	<distributionManagement>
-   <snapshotRepository>
-      <id>nexus</id>
-     <url>http://13.233.50.45:8081/nexus/content/repositories/snapshots/</url>
-   </snapshotRepository>
-</distributionManagement>
+        <snapshotRepository>
+         <id>nexus</id>
+           <url>http://13.233.50.45:8081/nexus/content/repositories/nexus/</url>
+         </snapshotRepository>
+        </distributionManagement>
 
 </project>
